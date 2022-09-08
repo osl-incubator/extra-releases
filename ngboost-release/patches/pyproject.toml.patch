@@ -1,0 +1,23 @@
+--- pyproject-ori.toml	2022-09-08 18:17:49.112859059 -0400
++++ pyproject.toml	2022-09-08 18:31:53.755021546 -0400
+@@ -1,7 +1,7 @@
+ [tool.poetry]
+-name = "ngboost"
+-version = "0.3.13dev"
+-description = "Library for probabilistic predictions via gradient boosting."
++name = "ngboost-release"
++version = "0.3.12"
++description = "It is just a workaround to fix the current ngboost package issue. See: https://github.com/stanfordmlgroup/ngboost/issues/283"
+ authors = ["Stanford ML Group <avati@cs.stanford.edu>"]
+ readme = "README.md"
+ homepage = "https://github.com/stanfordmlgroup/ngboost"
+@@ -11,6 +11,9 @@
+     "Operating System :: OS Independent"
+ ]
+ license = "Apache License 2.0"
++packages = [
++    { include = "ngboost" },
++]
+ 
+ [tool.poetry.dependencies]
+ python = ">=3.6, <4.0"

@@ -1,0 +1,7 @@
+name: ngboost-release
+channels:
+  - nodefaults
+  - conda-forge
+dependencies:
+  - python
+  - poetry
