@@ -1,0 +1,8 @@
+--- __init__-ori.py	2022-09-08 20:10:57.290864556 -0400
++++ __init__.py	2022-09-08 20:13:02.682700893 -0400
+@@ -9,4 +9,4 @@
+ from .api import NGBClassifier, NGBRegressor, NGBSurvival  # NOQA
+ from .ngboost import NGBoost  # NOQA
+ 
+-__version__ = version(__name__)
++__version__ = version("ngboost-release")

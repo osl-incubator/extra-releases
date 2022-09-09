@@ -6,7 +6,7 @@
 -version = "0.3.13dev"
 -description = "Library for probabilistic predictions via gradient boosting."
 +name = "ngboost-release"
-+version = "0.3.12"
++version = "0.3.12-1"
 +description = "It is just a workaround to fix the current ngboost package issue. See: https://github.com/stanfordmlgroup/ngboost/issues/283"
  authors = ["Stanford ML Group <avati@cs.stanford.edu>"]
  readme = "README.md"

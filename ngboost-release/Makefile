@@ -20,6 +20,7 @@ checkout-tag:
 apply-patches:
 	cd ngboost
 	patch pyproject.toml ../patches/pyproject.toml.patch
+	patch __init__.py ../patches/__init__.py.patch
 
 
 .ONESHELL:
