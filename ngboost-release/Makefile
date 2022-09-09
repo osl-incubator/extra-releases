@@ -25,11 +25,7 @@ apply-patches: checkout-tag
 
 .ONESHELL:
 .PHONY: publish
-publish:
+publish: apply-patches
 	cd ngboost
 	poetry build
 	poetry publish ${ARGS}
-
-.ONESHELL:
-.PHONY: run-workflow
-run-workflow: apply-patches publish
