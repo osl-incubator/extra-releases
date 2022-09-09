@@ -9,7 +9,7 @@ clone:
 
 .ONESHELL:
 .PHONY: checkout-tag
-checkout-tag:
+checkout-tag: clone
 	cd ngboost
 	git checkout .
 	git checkout v${NGBOOST_VERSION}
@@ -17,10 +17,10 @@ checkout-tag:
 
 .ONESHELL:
 .PHONY: apply-patches
-apply-patches:
+apply-patches: checkout-tag
 	cd ngboost
 	patch pyproject.toml ../patches/pyproject.toml.patch
-	patch __init__.py ../patches/__init__.py.patch
+	patch ngboost/__init__.py ../patches/__init__.py.patch
 
 
 .ONESHELL:
@@ -32,4 +32,4 @@ publish:
 
 .ONESHELL:
 .PHONY: run-workflow
-run-workflow: clone checkout-tag apply-patches publish
+run-workflow: apply-patches publish
